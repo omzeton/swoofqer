@@ -1,3 +1,5 @@
+@use "../../variables" as *;
+
 .splash-screen {
   height: calc(100vh - 60px);
   display: flex;
@@ -7,5 +9,9 @@
   &__button-container {
     display: flex;
     gap: 20px;
+  }
+
+  h1 {
+    color: $white1;
   }
 }
