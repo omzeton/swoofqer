@@ -1,3 +1,5 @@
+@use "../../variables" as *;
+
 .spacer {
   flex: 1;
 }
@@ -10,8 +12,8 @@
   height: 60px;
   display: flex;
   align-items: center;
-  background-color: #1976d2;
-  color: white;
+  background-color: $violet1;
+  color: $white1;
   font-weight: 600;
 }
 
