@@ -6,12 +6,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  color: $white1;
   &__button-container {
     display: flex;
     gap: 20px;
-  }
-
-  h1 {
-    color: $white1;
   }
 }
