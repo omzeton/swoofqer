@@ -7,9 +7,10 @@ import { AppComponent } from "./app.component";
 import { NavbarComponent } from "./navbar/navbar.component";
 import { SplashScreenComponent } from "./splash-screen/splash-screen.component";
 import { ButtonComponent } from "./design-system/button/button.component";
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, SplashScreenComponent, ButtonComponent],
+  declarations: [AppComponent, NavbarComponent, SplashScreenComponent, ButtonComponent, DashboardComponent],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
