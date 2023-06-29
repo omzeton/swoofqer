@@ -1,0 +1,11 @@
+@use "../../../variables" as *;
+
+.primary-button {
+  min-width: 120px;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid $violet1;
+  background-color: $violet1;
+  color: $white1;
+  cursor: pointer;
+}
