@@ -8,7 +8,8 @@ import { NavbarComponent } from "./navbar/navbar.component";
 import { SplashScreenComponent } from "./views/splash-screen/splash-screen.component";
 import { ButtonComponent } from "./design-system/button/button.component";
 import { DashboardComponent } from "./views/dashboard/dashboard.component";
-import { ViewContainerComponent } from './views/view-container/view-container.component';
+import { ViewContainerComponent } from "./views/view-container/view-container.component";
+import { TextComponent } from './design-system/text/text.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ViewContainerComponent } from './views/view-container/view-container.co
     ButtonComponent,
     DashboardComponent,
     ViewContainerComponent,
+    TextComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
