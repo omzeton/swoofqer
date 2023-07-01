@@ -12,7 +12,7 @@ interface ServerTestRes {
 })
 @Injectable()
 export class SplashScreenComponent implements OnInit {
-  serverTest: string = "disconnected";
+  serverTest: boolean = false;
 
   constructor(private http: HttpClient) {}
 
@@ -22,7 +22,7 @@ export class SplashScreenComponent implements OnInit {
 
   private fetchServerStatus() {
     this.http.get<ServerTestRes>("http://localhost:8000/").subscribe((res) => {
-      this.serverTest = res.status;
+      this.serverTest = !!res.status;
     });
   }
 }
