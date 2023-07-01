@@ -1,7 +1,9 @@
 from typing import Union
 from fastapi import FastAPI
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
+import json
 
 app = FastAPI(title="swoofqer-be")
 
@@ -16,3 +18,8 @@ app.add_middleware(
 @app.get("/")
 def read_root():
   return {"status": "online"}
+
+@app.get("/vocabulary")
+def read_root():
+  file = open('vocabulary.json')
+  return json.load(file)
