@@ -19,7 +19,7 @@ app.add_middleware(
 def read_root():
   return {"status": "online"}
 
-@app.get("/vocabulary")
+@app.get("/courses")
 def read_root():
-  file = open('vocabulary.json')
+  file = open('courses.json')
   return json.load(file)

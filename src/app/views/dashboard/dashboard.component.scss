@@ -1,3 +1,5 @@
+@use "../../../variables" as *;
+
 .dashboard {
   height: 100%;
   box-sizing: border-box;
@@ -8,10 +10,55 @@
   gap: 25px;
   &__side-menu {
     height: 100%;
-    border: 1px solid red;
+    // border: 1px solid red;
   }
   &__main {
     height: 100%;
-    border: 1px solid green;
+    // border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  &__list-container {
+    position: relative;
+    flex: 1;
+  }
+  &__list {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    box-sizing: border-box;
+    padding-right: 25px;
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.course-box {
+  border: 1px solid $violet1;
+  background-color: $violet1;
+  border-radius: 8px;
+  padding: 0px 10px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+  &__progress-bar {
+    margin-left: 10px;
+    width: 120px;
+    height: 10px;
+    border: 1px solid $white1;
+  }
+  &__progress-fill {
+    height: 100%;
+    background-color: $white1;
   }
 }

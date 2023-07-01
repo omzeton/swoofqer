@@ -1,9 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Component } from "@angular/core";
-
-interface ServerTestRes {
-  status: string;
-}
+import { ServerTestRes } from "src/types";
 
 @Component({
   selector: "app-navbar",
