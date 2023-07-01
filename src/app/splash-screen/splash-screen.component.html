@@ -1,11 +1,5 @@
 <div class="splash-screen">
   <h1>Welcome to Swoofqer!</h1>
-  <p>
-    Server status:
-    <span [ngClass]="{ 'status--active': serverTest, 'status--inactive': !serverTest }">{{
-      serverTest ? "online" : "disconnected"
-    }}</span>
-  </p>
   <div class="splash-screen__button-container">
     <app-button [text]="'Register'" />
     <app-button [text]="'Login'" />
