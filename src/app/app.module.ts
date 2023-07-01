@@ -8,6 +8,7 @@ import { NavbarComponent } from "./navbar/navbar.component";
 import { SplashScreenComponent } from "./views/splash-screen/splash-screen.component";
 import { ButtonComponent } from "./design-system/button/button.component";
 import { DashboardComponent } from "./views/dashboard/dashboard.component";
+import { ViewContainerComponent } from './views/view-container/view-container.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { DashboardComponent } from "./views/dashboard/dashboard.component";
     SplashScreenComponent,
     ButtonComponent,
     DashboardComponent,
+    ViewContainerComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
