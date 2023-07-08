@@ -1,25 +1,6 @@
 @use "../../../variables" as *;
 
 .dashboard {
-  height: 100%;
-  box-sizing: border-box;
-  padding: 50px 50px;
-  display: grid;
-  grid-template-columns: 80px 1fr;
-  grid-template-rows: 1fr;
-  gap: 25px;
-  &__side-menu {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  &__main {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-  }
   &__list-container {
     position: relative;
     flex: 1;

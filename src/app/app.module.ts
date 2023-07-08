@@ -11,6 +11,10 @@ import { DashboardComponent } from "./views/dashboard/dashboard.component";
 import { ViewContainerComponent } from "./views/view-container/view-container.component";
 import { TextComponent } from './design-system/text/text.component';
 import { IconButtonComponent } from './design-system/icon-button/icon-button.component';
+import { CourseComponent } from './views/course/course.component';
+import { SettingsComponent } from './views/settings/settings.component';
+import { ProgressComponent } from './views/progress/progress.component';
+import { CreateComponent } from './views/create/create.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +26,10 @@ import { IconButtonComponent } from './design-system/icon-button/icon-button.com
     ViewContainerComponent,
     TextComponent,
     IconButtonComponent,
+    CourseComponent,
+    SettingsComponent,
+    ProgressComponent,
+    CreateComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
