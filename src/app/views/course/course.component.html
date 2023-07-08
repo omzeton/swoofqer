@@ -1,0 +1,10 @@
+<app-view-container>
+  <app-text variant="h1">Course</app-text>
+  <app-text>{{ course?.language }}</app-text>
+  <app-text>{{ course?.progress }}</app-text>
+  <div *ngFor="let word of course?.vocabulary">
+    <hr />
+    <app-text>q: {{ word.question }}</app-text>
+    <app-text>a: {{ word.answer }}</app-text>
+  </div>
+</app-view-container>

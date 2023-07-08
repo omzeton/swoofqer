@@ -23,3 +23,12 @@ def read_root():
 def read_root():
   file = open('courses.json')
   return json.load(file)
+
+@app.get("/course/{course_id}")
+def read_root(course_id: int):
+  file = open('courses.json')
+  loaded_file = json.load(file)
+  for obj in loaded_file:
+    if obj["id"] == course_id:
+      return obj
+  return {}

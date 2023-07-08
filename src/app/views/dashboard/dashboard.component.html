@@ -1,33 +1,23 @@
 <app-view-container>
-  <div class="dashboard">
-    <div class="dashboard__side-menu">
-      <app-button>Dashboard</app-button>
-      <app-button>Courses</app-button>
-      <app-button>Progress</app-button>
-      <app-button>Create</app-button>
-      <app-button>Settings</app-button>
-    </div>
-    <div class="dashboard__main">
-      <app-text variant="h1">Dashboard</app-text>
-      <app-text>Courses:</app-text>
-      <app-text *ngIf="loadingCourses">Loading...</app-text>
-      <div class="dashboard__list-container">
-        <div class="dashboard__list">
-          <div *ngFor="let course of coursesList" class="course-box">
-            <app-text>Language: {{ course.language }}</app-text>
-            <div class="flex">
-              <app-text>Progress:</app-text>
-              <div class="course-box__progress-bar">
-                <div
-                  class="course-box__progress-fill"
-                  [style]="{ width: course.progress + '%' }"
-                ></div>
-              </div>
-            </div>
-            <app-text>Word count: {{ course.vocabulary.length }}</app-text>
+  <app-text variant="h1">Dashboard</app-text>
+  <app-text>Courses:</app-text>
+  <app-text *ngIf="loadingCourses">Loading...</app-text>
+  <div class="dashboard__list-container">
+    <div class="dashboard__list">
+      <a
+        *ngFor="let course of coursesList"
+        class="course-box"
+        [routerLink]="['/course', course.id]"
+      >
+        <app-text>Language: {{ course.language }}</app-text>
+        <div class="flex">
+          <app-text>Progress:</app-text>
+          <div class="course-box__progress-bar">
+            <div class="course-box__progress-fill" [style]="{ width: course.progress + '%' }"></div>
           </div>
         </div>
-      </div>
+        <app-text>Word count: {{ course.vocabulary.length }}</app-text>
+      </a>
     </div>
   </div>
 </app-view-container>
