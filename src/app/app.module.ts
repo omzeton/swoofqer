@@ -10,6 +10,7 @@ import { ButtonComponent } from "./design-system/button/button.component";
 import { DashboardComponent } from "./views/dashboard/dashboard.component";
 import { ViewContainerComponent } from "./views/view-container/view-container.component";
 import { TextComponent } from './design-system/text/text.component';
+import { IconButtonComponent } from './design-system/icon-button/icon-button.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { TextComponent } from './design-system/text/text.component';
     DashboardComponent,
     ViewContainerComponent,
     TextComponent,
+    IconButtonComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
