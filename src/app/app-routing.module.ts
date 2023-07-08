@@ -8,7 +8,7 @@ import { CreateComponent } from "./views/create/create.component";
 
 const routes: Routes = [
   { path: "dashboard", component: DashboardComponent },
-  { path: "course", component: CourseComponent },
+  { path: "course/:id", component: CourseComponent },
   { path: "settings", component: SettingsComponent },
   { path: "progress", component: ProgressComponent },
   { path: "create", component: CreateComponent },
