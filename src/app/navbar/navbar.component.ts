@@ -8,7 +8,8 @@ import { ServerTestRes } from "src/types";
   styleUrls: ["./navbar.component.scss"],
 })
 export class NavbarComponent {
-  serverTest: boolean = false;
+  menuIsOpen = false;
+  serverTest = false;
 
   constructor(private http: HttpClient) {}
 
@@ -20,5 +21,9 @@ export class NavbarComponent {
     this.http.get<ServerTestRes>("http://localhost:8000/").subscribe((res) => {
       this.serverTest = !!res.status;
     });
+  }
+
+  toggleMenu() {
+    this.menuIsOpen = !this.menuIsOpen;
   }
 }

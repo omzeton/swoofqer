@@ -1,0 +1,8 @@
+@use "../../../variables" as *;
+
+h1 {
+  color: $theme;
+  font-size: 2rem;
+  font-family: $family;
+  font-weight: 700;
+}

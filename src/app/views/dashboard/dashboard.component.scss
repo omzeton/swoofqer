@@ -1,46 +1,8 @@
 @use "../../../variables" as *;
 
-.dashboard {
-  &__list-container {
-    position: relative;
-    flex: 1;
-  }
-  &__list {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    box-sizing: border-box;
-    padding-right: 25px;
-  }
-}
-
-.flex {
-  display: flex;
-  align-items: baseline;
-}
-
-.course-box {
-  border: 1px solid $violet1;
-  background-color: $violet1;
-  border-radius: 8px;
-  padding: 0px 10px;
-  cursor: pointer;
-  &:hover {
-    opacity: 0.7;
-  }
-  &__progress-bar {
-    margin-left: 10px;
-    width: 120px;
-    height: 10px;
-    border: 1px solid $white1;
-  }
-  &__progress-fill {
-    height: 100%;
-    background-color: $white1;
-  }
+h1 {
+  color: $theme;
+  font-size: 2rem;
+  font-family: $family;
+  font-weight: 700;
 }

@@ -1,0 +1,15 @@
+<svg
+  width="380"
+  height="380"
+  viewBox="0 0 380 380"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  [ngStyle]="{ width, height }"
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M0 0H180V80H80V180H0V0ZM280 0V180H100V100H200V0H280ZM380 0V180H300V0H380ZM80 200V300H300V280H100V200H380V380H0V200H80Z"
+    [attr.fill]="color"
+  />
+</svg>

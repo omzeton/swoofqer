@@ -5,6 +5,7 @@ import { CourseComponent } from "./views/course/course.component";
 import { SettingsComponent } from "./views/settings/settings.component";
 import { ProgressComponent } from "./views/progress/progress.component";
 import { CreateComponent } from "./views/create/create.component";
+import { SplashScreenComponent } from "./views/splash-screen/splash-screen.component";
 
 const routes: Routes = [
   { path: "dashboard", component: DashboardComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: "settings", component: SettingsComponent },
   { path: "progress", component: ProgressComponent },
   { path: "create", component: CreateComponent },
+  { path: "", component: SplashScreenComponent },
 ];
 
 @NgModule({
