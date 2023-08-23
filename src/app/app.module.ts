@@ -12,6 +12,9 @@ import { SettingsComponent } from "./views/settings/settings.component";
 import { ProgressComponent } from "./views/progress/progress.component";
 import { CreateComponent } from "./views/create/create.component";
 import { AppLogoComponent } from "./svgs/app-logo/app-logo.component";
+import { QuizOneComponent } from "./game/quiz-one/quiz-one.component";
+import { QuizTwoComponent } from './game/quiz-two/quiz-two.component';
+import { QuizThreeComponent } from './game/quiz-three/quiz-three.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import { AppLogoComponent } from "./svgs/app-logo/app-logo.component";
     ProgressComponent,
     CreateComponent,
     AppLogoComponent,
+    QuizOneComponent,
+    QuizTwoComponent,
+    QuizThreeComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],

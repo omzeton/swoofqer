@@ -4,24 +4,9 @@
   margin-top: 60px;
   min-height: calc(100vh - 60px);
   background-color: $black1;
-  background: radial-gradient(
-      circle,
-      transparent 20%,
-      $black1 20%,
-      $black1 80%,
-      transparent 80%,
-      transparent
-    ),
-    radial-gradient(circle, transparent 20%, $black1 20%, $black1 80%, transparent 80%, transparent)
-      25px 25px,
-    linear-gradient($black2 2px, transparent 2px) 0 -1px,
-    linear-gradient(90deg, $black2 2px, $black1 2px) -1px 0;
-  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
-  position: relative;
 }
 
 main {
-  position: relative;
   height: 100%;
   max-width: 1400px;
   margin: 0 auto;

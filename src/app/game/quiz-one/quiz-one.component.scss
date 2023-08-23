@@ -1,0 +1,39 @@
+@use "../../../variables" as *;
+
+.container {
+  margin-top: 120px;
+  padding: 0 100px;
+  h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 12rem;
+    color: $white1;
+  }
+}
+
+.info-block {
+  font-family: $family;
+  &__title {
+    color: $theme;
+    font-weight: 500;
+  }
+  &__content {
+    color: $white1;
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+}
+
+.button-container {
+  margin-top: 80px;
+  button {
+    background-color: $theme;
+    border: none;
+    padding: 10px 20px;
+    color: $white1;
+    font-family: $family;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
